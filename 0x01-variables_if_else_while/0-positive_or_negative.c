@@ -2,13 +2,9 @@
 #include <time.h>
 #include <stdio.h>
 
-/**
- * main - This is the main entry of the program
- * This program will assign a random number to the variable n
- * The variable n will store a different value each time this program runs
- * The program prints whether the number stored in the variable n is (+) 0r (-)
- * Return: Always 0 (indicating successful)
- */
+/* more headers goes there */
+
+/* betty style doc for function main goes there */
 
 int main(void)
 {
