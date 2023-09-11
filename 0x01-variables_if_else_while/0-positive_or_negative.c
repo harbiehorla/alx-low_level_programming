@@ -12,26 +12,29 @@
 
 int main(void)
 {
-    int number;
+    int n;
 
     /* Seed the random number generator */
     srand(time(0));
 
     /* Generate a random number within a specified range */
-    number = rand() - RAND_MAX / 2;
+    n = rand() - RAND_MAX / 2;
 
-    if (number > 0)
+    printf("%d is ", n);
+
+    if (n > 0)
     {
-        printf("%d is a positive number\n", number);
+        printf("positive\n");
     }
-    else if (number == 0)
+    else if (n == 0)
     {
-        printf("%d is zero\n", number);
+        printf("zero\n");
     }
     else
     {
-        printf("%d is a negative number\n", number);
+        printf("negative\n");
     }
 
     return (0);
 }
+
