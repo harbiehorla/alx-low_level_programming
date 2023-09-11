@@ -10,21 +10,21 @@
  * Return: Always 0 (indicating successful execution)
  */
 
-int main(void)
+  int main(void)
+	{
+int n;
+
+/* Seed the random number generator */
+srand(time(0));
+
+/* Generate a random number within a specified range */
+n = rand() - RAND_MAX / 2;
+
+printf("%d is ", n);
+
+if (n > 0)
 {
-    int n;
-
-    /* Seed the random number generator */
-    srand(time(0));
-
-    /* Generate a random number within a specified range */
-    n = rand() - RAND_MAX / 2;
-
-    printf("%d is ", n);
-
-    if (n > 0)
-    {
-        printf("positive\n");
+   printf("positive\n");
     }
     else if (n == 0)
     {
