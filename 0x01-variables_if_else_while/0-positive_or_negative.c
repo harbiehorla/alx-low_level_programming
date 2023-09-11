@@ -2,29 +2,36 @@
 #include <time.h>
 #include <stdio.h>
 
-/* more headers goes there */
-
-/* betty style doc for function main goes there */
+/**
+ * main - Entry point of the program
+ * This program generates a random integer and determines its sign.
+ * The generated integer changes each time the program runs.
+ * It then prints whether the number is positive, zero, or negative.
+ * Return: Always 0 (indicating successful execution)
+ */
 
 int main(void)
 {
-	int n;
+    int number;
 
-	srand(time(0));
-	n = rand() - RAND_MAX / 2;
+    /* Seed the random number generator */
+    srand(time(0));
 
-	if (n > 0)
-	{
-		printf("%d is positive\n", n);
-	}
-	else if (n == 0)
-	{
-		printf("%d is zero\n", n);
-	}
-	else
-	{
-		printf("%d is negative\n", n);
-	}
+    /* Generate a random number within a specified range */
+    number = rand() - RAND_MAX / 2;
 
-	return (0);
+    if (number > 0)
+    {
+        printf("%d is a positive number\n", number);
+    }
+    else if (number == 0)
+    {
+        printf("%d is zero\n", number);
+    }
+    else
+    {
+        printf("%d is a negative number\n", number);
+    }
+
+    return (0);
 }
