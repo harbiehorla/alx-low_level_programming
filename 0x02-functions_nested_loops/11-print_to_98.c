@@ -1,17 +1,29 @@
 #include "main.h"
+#include <stdio.h>
 
 /**
- * main - check the code
+ * print_to_98 - Prints n to 98 counts separated by comma, followed by space
  *
- * Return: Always 0.
+ * @n: This is the input
  */
-int main(void)
+
+void print_to_98(int n)
 {
-	print_to_98(0);
-	print_to_98(98);
-	print_to_98(111);
-	print_to_98(81);
-	print_to_98(-10);
-	
-	return (0);
+	int numCount;
+
+	if (n < 98)
+	{
+		for (numCount = n; numCount < 98; ++numCount)
+		{
+			printf("%d, ", numCount);
+		}
+	}
+	else
+	{
+		for (numCount = n; numCount > 98; --numCount)
+		{
+			printf("%d, ", numCount);
+		}
+	}
+	printf("98\n");
 }
