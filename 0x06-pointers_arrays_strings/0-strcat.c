@@ -6,6 +6,7 @@
  * @src: input value
  * return: void
  */
+char *_strcat(char *dest, char *src)
 {
 	int i;
 	int j;
