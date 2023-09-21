@@ -7,7 +7,7 @@
  *
  * @n: declares integer to be printed using _putchar
  *
- * Return: returns void, to terminate function
+ * Return: returns void and to terminate function
  */
 
 void print_number(int n)
