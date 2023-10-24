@@ -25,24 +25,30 @@ size_t listint_len(const listint_t *h)
 	return (nodes);
 }
 
-int main()
+/**
+ * main - Entry point
+ *
+ * Return: Always 0
+ */
+int main(void)
 {
 	listint_t *head = NULL;
 
-	// Insert values 5, 6, 7, 8 into the list
+	/* Insert values 5, 6, 7, 8 into the list */
 	listint_insert(&head, 5);
 	listint_insert(&head, 6);
 	listint_insert(&head, 7);
 	listint_insert(&head, 8);
 
-	// Get the length of the list
+	/* Get the length of the list */
 	size_t length = listint_len(head);
 
-	// Print the length of the list
+	/* Print the length of the list */
 	printf("Length of the list: %zu\n", length);
 
-	// Delete all nodes in the list
+	/* Delete all nodes in the list */
 	listint_clear(&head);
 
 	return (0);
 }
+
