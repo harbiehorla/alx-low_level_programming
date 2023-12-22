@@ -1,5 +1,4 @@
-/* filename: 1-djb2.c
- */
+/* filename: 1-djb2.c */
 
 #include "hash_tables.h"
 
